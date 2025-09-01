@@ -100,7 +100,7 @@ This way EC2 waits for the VPC, subnets, and SGs to be created.
 
 ### 1️⃣ Clone and init
 ```bash
-cd infra
+cd vpcpeering-ec2-terraform
 terraform init
 ```
 
