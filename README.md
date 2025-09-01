@@ -14,7 +14,7 @@ The code is fully modularized into `vpc/` and `ec2/` submodules, orchestrated by
 
 ## 📂 Project Structure
 ```
-infra/
+vpcpeering-ec2-terraform/
 ├─ main.tf         # Root orchestrator (runs everything together)
 ├─ variables.tf    # Region + tags
 ├─ version.tf      # Terraform & provider version constraints
