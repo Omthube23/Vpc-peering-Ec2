@@ -9,7 +9,7 @@ variable "instance_type" {
 
 variable "key_name" {
   type    = string
-  default = "pem"
+  default = "Omk1"
 }
 
 variable "tags" { type = map(string) }

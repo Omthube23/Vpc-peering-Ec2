@@ -1,5 +1,5 @@
 resource "aws_instance" "this" {
-  ami                         = "ami-02d26659fd82cf299" # Ubuntu AMI
+  ami                         = "ami-0360c520857e3138f" # Ubuntu AMI
   instance_type               = var.instance_type
   subnet_id                   = var.subnet_id
   vpc_security_group_ids      = var.security_group_ids
