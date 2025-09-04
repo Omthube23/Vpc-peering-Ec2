@@ -1,0 +1,21 @@
+# SSH keys
+*.pem
+*.pub
+
+# Terraform state & crash logs
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# Terraform overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock & cache
+.terraform.lock.hcl
+.terraform/
+
+# Env files
+*.env
