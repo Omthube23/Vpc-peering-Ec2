@@ -6,7 +6,7 @@ This repository contains a **Terraform project** that provisions:
 - Internet Gateway, NAT Gateway, and Route Tables  
 - **VPC Peering** between Prod ↔ Dev  
 - Security Groups (SSH open to world, ICMP between VPCs)  
-- Two **EC2 Instances** (`t3.medium`), one in each VPC  
+- Two **EC2 Instances** (`t2.micro`), one in each VPC  
 
 The code is fully modularized into `vpc/` and `ec2/` submodules, orchestrated by a root `main.tf`.
 
