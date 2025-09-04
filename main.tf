@@ -25,7 +25,7 @@ module "prod_ec2" {
   name               = "prod-ec2"
   subnet_id          = module.vpc.prod_public_subnet_id
   security_group_ids = [module.vpc.prod_sg_id]
-  instance_type      = "t3.medium"
+  instance_type      = "t2.micro"
   key_name           = "pem"
   tags               = var.tags
   depends_on         = [module.vpc]
@@ -37,8 +37,8 @@ module "dev_ec2" {
   name               = "dev-ec2"
   subnet_id          = module.vpc.dev_public_subnet_id
   security_group_ids = [module.vpc.dev_sg_id]
-  instance_type      = "t3.medium"
-  key_name           = "pem"
+  instance_type      = "t2.micro"
+  key_name           = "Omk1"
   tags               = var.tags
   depends_on         = [module.vpc]
 }

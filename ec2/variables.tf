@@ -4,7 +4,7 @@ variable "security_group_ids" { type = list(string) }
 
 variable "instance_type" {
   type    = string
-  default = "t3.medium"
+  default = "t2.micro"
 }
 
 variable "key_name" {
