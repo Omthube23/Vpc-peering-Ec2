@@ -7,6 +7,6 @@ variable "tags" {
   type = map(string)
   default = {
     Project = "Two-VPC-Peering-Demo"
-    Owner   = "Shubham"
+    Owner   = "Omthube23"
   }
 }
