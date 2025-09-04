@@ -65,10 +65,10 @@ Adds routes in all route tables so that private IPs in Prod can talk to Dev, and
 
 ### 4. **EC2 Module**
 Launches EC2 instances in the subnets provided:  
-- Uses **Ubuntu AMI** (`ami-02d26659fd82cf299`)  
-- Instance type: `t3.medium`  
+- Uses **Ubuntu AMI** (`ami-0360c520857e3138f`)  
+- Instance type: `t2.micro`  
 - Associates a public IP  
-- Key pair: `shubham` (default, can be overridden)  
+- Key pair: `Omk1` (default, can be overridden)  
 
 **Outputs:**  
 - `public_ip` → connect via SSH  
@@ -121,8 +121,8 @@ Terraform will:
 - Default user: **ubuntu**  
 - SSH example:
 ```bash
-ssh -i shubham.pem ubuntu@<prod_ec2_public_ip>
-ssh -i shubham.pem ubuntu@<dev_ec2_public_ip>
+ssh -i Omk1.pem ubuntu@<prod_ec2_public_ip>
+ssh -i Omk1.pem ubuntu@<dev_ec2_public_ip>
 ```
 
 - Ping across VPCs using private IPs:
